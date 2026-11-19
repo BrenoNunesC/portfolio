@@ -15,7 +15,7 @@ function enviarMensagem(event) {
         resposta.style.color = "#ff6b6b";
     } else {
         resposta.textContent = "Obrigado, " + nome + "! Sua mensagem foi enviada.";
-        resposta.style.color = "#4cc27a";
+        resposta.style.color = "#2ecc71";
         formulario.reset();
     }
 }

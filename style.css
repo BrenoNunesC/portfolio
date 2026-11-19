@@ -10,8 +10,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #111111;
+    color: #eeeeee;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,10 +21,10 @@ main {
 }
 /* Cabeçalho */
 header {
-    background-color: #0a0a0a;
-    color: #e0e0e0;
+    background-color: #111111;
+    color: #eeeeee;
     padding: 20px 8%;
-    border-bottom: 2px solid #2e9e5b;
+    border-bottom: 2px solid #2ecc71;
 
     display: flex;
     justify-content: space-between;
@@ -36,21 +36,21 @@ header {
 }
 header h1 {
     font-size: 26px;
-    color: #4cc27a;
+    color: #2ecc71;
 }
 nav {
     display: flex;
     gap: 25px;
 }
 nav a {
-    color: #e0e0e0;
+    color: #eeeeee;
     text-decoration: none;
     font-size: 16px;
     transition: 0.3s;
 }
 nav a:hover,
 nav a.ativo {
-    color: #4cc27a;
+    color: #2ecc71;
 }
 /* Página inicial */
 .apresentacao {
@@ -65,27 +65,27 @@ nav a.ativo {
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #2e9e5b;
+    border: 5px solid #2ecc71;
 }
 .apresentacao-texto {
     max-width: 500px;
 }
 .apresentacao-texto h2 {
     font-size: 34px;
-    color: #4cc27a;
+    color: #2ecc71;
     margin-bottom: 15px;
 }
 .apresentacao-texto p {
     font-size: 17px;
-    color: #b5b5b5;
+    color: #aaaaaa;
     margin-bottom: 12px;
     line-height: 1.6;
 }
 /* Botão */
 .botao {
     display: inline-block;
-    background-color: #2e9e5b;
-    color: #0a0a0a;
+    background-color: #2ecc71;
+    color: #111111;
     font-weight: bold;
     text-decoration: none;
     padding: 12px 25px;
@@ -94,17 +94,17 @@ nav a.ativo {
     transition: 0.3s;
 }
 .botao:hover {
-    background-color: #4cc27a;
+    background-color: #27ae60;
     transform: translateY(-2px);
 }
 /* Links (LinkedIn, GitHub, E-mail) */
 .links {
-    background-color: #1a1a1a;
+    background-color: #1c1c1c;
     padding: 50px 20px;
     text-align: center;
 }
 .links h2 {
-    color: #4cc27a;
+    color: #2ecc71;
     font-size: 28px;
     margin-bottom: 25px;
 }
@@ -116,33 +116,33 @@ nav a.ativo {
 }
 .lista-links a {
     background-color: transparent;
-    color: #4cc27a;
+    color: #2ecc71;
     text-decoration: none;
     font-weight: bold;
     padding: 12px 30px;
-    border: 2px solid #2e9e5b;
+    border: 2px solid #2ecc71;
     border-radius: 5px;
     transition: 0.3s;
 }
 .lista-links a:hover {
-    background-color: #2e9e5b;
-    color: #0a0a0a;
+    background-color: #2ecc71;
+    color: #111111;
 }
 /* Banner das páginas */
 .banner {
-    background-color: #1a1a1a;
+    background-color: #1c1c1c;
     padding: 50px 20px;
     text-align: center;
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid #333333;
 }
 .banner h2 {
     font-size: 34px;
-    color: #4cc27a;
+    color: #2ecc71;
     margin-bottom: 10px;
 }
 .banner p {
     font-size: 17px;
-    color: #b5b5b5;
+    color: #aaaaaa;
 }
 /* Página sobre */
 .conteudo {
@@ -152,30 +152,30 @@ nav a.ativo {
     gap: 25px;
 }
 .caixa {
-    background-color: #1e1e1e;
-    border: 1px solid #2a2a2a;
+    background-color: #1c1c1c;
+    border: 1px solid #333333;
     border-radius: 8px;
     padding: 25px;
 }
 .caixa h3 {
-    color: #4cc27a;
+    color: #2ecc71;
     font-size: 22px;
     margin-bottom: 15px;
     padding-bottom: 8px;
-    border-bottom: 3px solid #2e9e5b;
+    border-bottom: 3px solid #2ecc71;
 }
 .caixa p {
-    color: #b5b5b5;
+    color: #aaaaaa;
     line-height: 1.6;
     margin-bottom: 10px;
 }
 .caixa ul {
     padding-left: 20px;
-    color: #b5b5b5;
+    color: #aaaaaa;
     line-height: 1.8;
 }
 .caixa b {
-    color: #e0e0e0;
+    color: #eeeeee;
 }
 .habilidades {
     display: flex;
@@ -187,8 +187,8 @@ nav a.ativo {
     padding-left: 0;
 }
 .habilidades li {
-    background-color: #1f3a2a;
-    color: #4cc27a;
+    background-color: #333333;
+    color: #2ecc71;
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 15px;
@@ -203,8 +203,8 @@ nav a.ativo {
     gap: 25px;
 }
 .card {
-    background-color: #1e1e1e;
-    border: 1px solid #2a2a2a;
+    background-color: #1c1c1c;
+    border: 1px solid #333333;
     border-radius: 8px;
     padding: 25px;
 
@@ -215,22 +215,22 @@ nav a.ativo {
 }
 .card:hover {
     transform: translateY(-5px);
-    border-color: #2e9e5b;
+    border-color: #2ecc71;
 }
 .card h3 {
-    color: #4cc27a;
+    color: #2ecc71;
     font-size: 20px;
     margin-bottom: 10px;
 }
 .card p {
-    color: #b5b5b5;
+    color: #aaaaaa;
     font-size: 15px;
     line-height: 1.5;
     margin-bottom: 15px;
 }
 .card a {
     margin-top: auto;
-    color: #4cc27a;
+    color: #2ecc71;
     font-weight: bold;
     text-decoration: none;
 }
@@ -243,43 +243,43 @@ nav a.ativo {
     text-align: center;
 }
 .contato form {
-    background-color: #1e1e1e;
+    background-color: #1c1c1c;
     max-width: 500px;
     margin: 35px auto 0;
     padding: 25px;
     border-radius: 8px;
-    border: 1px solid #2a2a2a;
+    border: 1px solid #333333;
     text-align: left;
 }
 .contato label {
     display: inline-block;
     margin-bottom: 7px;
     font-weight: bold;
-    color: #e0e0e0;
+    color: #eeeeee;
 }
 .contato input,
 .contato textarea {
     width: 100%;
     padding: 11px;
     margin-bottom: 15px;
-    background-color: #2a2a2a;
-    color: #e0e0e0;
-    border: 1px solid #3a3a3a;
+    background-color: #333333;
+    color: #eeeeee;
+    border: 1px solid #333333;
     border-radius: 5px;
     font-size: 15px;
     outline: none;
 }
 .contato input:focus,
 .contato textarea:focus {
-    border-color: #2e9e5b;
+    border-color: #2ecc71;
 }
 .contato textarea {
     resize: vertical;
 }
 .contato button {
     width: 100%;
-    background-color: #2e9e5b;
-    color: #0a0a0a;
+    background-color: #2ecc71;
+    color: #111111;
     font-weight: bold;
     border: none;
     padding: 12px;
@@ -289,7 +289,7 @@ nav a.ativo {
     transition: 0.3s;
 }
 .contato button:hover {
-    background-color: #4cc27a;
+    background-color: #27ae60;
 }
 #resposta {
     margin-top: 20px;
@@ -297,16 +297,16 @@ nav a.ativo {
 }
 /* Rodapé */
 footer {
-    background-color: #0a0a0a;
-    color: #b5b5b5;
+    background-color: #111111;
+    color: #aaaaaa;
     text-align: center;
     padding: 20px;
     font-size: 14px;
     line-height: 1.8;
-    border-top: 2px solid #2e9e5b;
+    border-top: 2px solid #2ecc71;
 }
 footer a {
-    color: #4cc27a;
+    color: #2ecc71;
     text-decoration: none;
 }
 footer a:hover {
