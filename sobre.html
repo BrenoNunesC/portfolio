@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sobre Breno Nunes, formação, experiência e habilidades">
+    <title>Breno Nunes | Sobre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Breno<span>.dev</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html" class="ativo">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <button class="btn-tema" id="btnTema" aria-label="Alternar tema">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-pagina">
+            <h1>Sobre <span class="destaque">mim</span></h1>
+            <p>Um pouco da minha história, do que eu estudo e do que eu sei fazer.</p>
+        </section>
+
+        <section class="sobre revelar">
+            <figure class="sobre-foto">
+                <img src="img/perfil.png" alt="Foto do Breno Nunes">
+            </figure>
+            <article class="sobre-texto">
+                <h2>Quem sou eu</h2>
+                <p>
+                    Meu nome é <strong>Breno da Costa Nunes</strong>, sou estudante de
+                    <strong>Engenharia de Software</strong> na UniFil, em Londrina, e trabalho na área de suporte de TI.
+                </p>
+                <p>
+                    Comecei a programar por curiosidade, querendo entender como os jogos e os sites funcionavam
+                    por dentro. Hoje desenvolvo projetos web, sistemas com banco de dados e alguns jogos nas horas vagas.
+                </p>
+                <p>
+                    Meu objetivo é crescer como desenvolvedor, trabalhar com projetos reais e continuar aprendendo
+                    tecnologias novas.
+                </p>
+                <a href="contato.html" class="btn btn-principal">Vamos conversar</a>
+            </article>
+        </section>
+
+        <section class="habilidades revelar">
+            <h2 class="titulo-secao">Habilidades</h2>
+            <div class="lista-habilidades">
+                <div class="habilidade">
+                    <div class="habilidade-info"><span>HTML</span><span>85%</span></div>
+                    <div class="barra"><div class="barra-progresso" data-nivel="85"></div></div>
+                </div>
+                <div class="habilidade">
+                    <div class="habilidade-info"><span>CSS</span><span>75%</span></div>
+                    <div class="barra"><div class="barra-progresso" data-nivel="75"></div></div>
+                </div>
+                <div class="habilidade">
+                    <div class="habilidade-info"><span>JavaScript</span><span>65%</span></div>
+                    <div class="barra"><div class="barra-progresso" data-nivel="65"></div></div>
+                </div>
+                <div class="habilidade">
+                    <div class="habilidade-info"><span>PHP</span><span>60%</span></div>
+                    <div class="barra"><div class="barra-progresso" data-nivel="60"></div></div>
+                </div>
+                <div class="habilidade">
+                    <div class="habilidade-info"><span>MySQL / MariaDB</span><span>60%</span></div>
+                    <div class="barra"><div class="barra-progresso" data-nivel="60"></div></div>
+                </div>
+                <div class="habilidade">
+                    <div class="habilidade-info"><span>Git e GitHub</span><span>70%</span></div>
+                    <div class="barra"><div class="barra-progresso" data-nivel="70"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trajetoria revelar">
+            <h2 class="titulo-secao">Trajetória</h2>
+            <ol class="linha-tempo">
+                <li class="item-tempo">
+                    <time>Atual</time>
+                    <h3>Suporte de TI</h3>
+                    <p>Atendimento aos usuários, manutenção de computadores e resolução de problemas do dia a dia.</p>
+                </li>
+                <li class="item-tempo">
+                    <time>Em andamento</time>
+                    <h3>Engenharia de Software, UniFil</h3>
+                    <p>Graduação com foco em programação, banco de dados, desenvolvimento web e engenharia de requisitos.</p>
+                </li>
+                <li class="item-tempo">
+                    <time>Projetos pessoais</time>
+                    <h3>Jogos e sistemas</h3>
+                    <p>Desenvolvimento de jogos como o Trucado e de sistemas web com PHP e banco de dados.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="curiosidades revelar">
+            <h2 class="titulo-secao">Curiosidades</h2>
+            <p class="curiosidade-texto" id="curiosidadeTexto">Clique no botão para ver uma curiosidade sobre mim.</p>
+            <button class="btn btn-secundario" id="btnCuriosidade">Outra curiosidade</button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <p>&copy; <span id="ano"></span> Breno Nunes. Todos os direitos reservados.</p>
+            <ul class="rodape-links">
+                <li><a href="https://www.linkedin.com/in/breno-nunes-1a18032b0/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/BrenoNunesC" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="mailto:brenonunes@edu.unifil.br">E-mail</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <button class="btn-topo" id="btnTopo" aria-label="Voltar ao topo">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projetos desenvolvidos por Breno Nunes">
+    <title>Breno Nunes | Projetos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Breno<span>.dev</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html" class="ativo">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <button class="btn-tema" id="btnTema" aria-label="Alternar tema">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-pagina">
+            <h1>Meus <span class="destaque">projetos</span></h1>
+            <p>Alguns trabalhos que fiz na faculdade e por conta própria.</p>
+        </section>
+
+        <section class="projetos">
+            <div class="filtros" id="filtros">
+                <button class="filtro ativo" data-categoria="todos">Todos</button>
+                <button class="filtro" data-categoria="web">Web</button>
+                <button class="filtro" data-categoria="jogo">Jogos</button>
+                <button class="filtro" data-categoria="faculdade">Faculdade</button>
+            </div>
+
+            <div class="grid-projetos" id="gridProjetos">
+                <article class="card-projeto revelar" data-categoria="jogo">
+                    <div class="projeto-capa capa-roxa">🃏</div>
+                    <div class="projeto-corpo">
+                        <h3>Trucado</h3>
+                        <p>Jogo de truco com coringas e sistema de pontuação para derrotar bosses.</p>
+                        <ul class="tags">
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <a href="https://github.com/BrenoNunesC/trucado" target="_blank" rel="noopener" class="link-projeto">Ver no GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto revelar" data-categoria="web">
+                    <div class="projeto-capa capa-azul">📊</div>
+                    <div class="projeto-corpo">
+                        <h3>Acredite.se</h3>
+                        <p>Sistema para análise de planilhas, infográficos, CRM e gestão de equipes.</p>
+                        <ul class="tags">
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <a href="https://github.com/BrenoNunesC/acredite-se" target="_blank" rel="noopener" class="link-projeto">Ver no GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto revelar" data-categoria="web">
+                    <div class="projeto-capa capa-verde">🕹️</div>
+                    <div class="projeto-corpo">
+                        <h3>Game Zone</h3>
+                        <p>Comunidade online para jogadores conversarem e compartilharem conteúdo sobre jogos.</p>
+                        <ul class="tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <a href="https://github.com/BrenoNunesC/Game-Zone-comunidade-Online-" target="_blank" rel="noopener" class="link-projeto">Ver no GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto revelar" data-categoria="faculdade">
+                    <div class="projeto-capa capa-laranja">🛒</div>
+                    <div class="projeto-corpo">
+                        <h3>Loja</h3>
+                        <p>Página de loja virtual feita como atividade da disciplina de desenvolvimento web.</p>
+                        <ul class="tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <a href="https://github.com/BrenoNunesC/Atividade-3---loja" target="_blank" rel="noopener" class="link-projeto">Ver no GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto revelar" data-categoria="faculdade">
+                    <div class="projeto-capa capa-rosa">📝</div>
+                    <div class="projeto-corpo">
+                        <h3>Formulários</h3>
+                        <p>Atividade com formulários em HTML, usando vários tipos de campos e validação.</p>
+                        <ul class="tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <a href="https://github.com/BrenoNunesC/atividade-5-formularios" target="_blank" rel="noopener" class="link-projeto">Ver no GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="card-projeto revelar" data-categoria="jogo">
+                    <div class="projeto-capa capa-cinza">🗡️</div>
+                    <div class="projeto-corpo">
+                        <h3>Scrapline</h3>
+                        <p>Jogo 3D de exploração de dungeons, ainda em desenvolvimento.</p>
+                        <ul class="tags">
+                            <li>3D</li>
+                            <li>Game Dev</li>
+                        </ul>
+                        <span class="link-projeto desativado">Repositório privado</span>
+                    </div>
+                </article>
+            </div>
+
+            <p class="sem-resultado" id="semResultado" hidden>Nenhum projeto nessa categoria.</p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <p>&copy; <span id="ano"></span> Breno Nunes. Todos os direitos reservados.</p>
+            <ul class="rodape-links">
+                <li><a href="https://www.linkedin.com/in/breno-nunes-1a18032b0/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/BrenoNunesC" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="mailto:brenonunes@edu.unifil.br">E-mail</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <button class="btn-topo" id="btnTopo" aria-label="Voltar ao topo">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
