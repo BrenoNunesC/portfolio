@@ -12,10 +12,10 @@ function enviarMensagem(event) {
 
     if (nome == "" || email == "" || mensagem == "") {
         resposta.textContent = "Preencha todos os campos!";
-        resposta.style.color = "red";
+        resposta.style.color = "#ff6b6b";
     } else {
         resposta.textContent = "Obrigado, " + nome + "! Sua mensagem foi enviada.";
-        resposta.style.color = "green";
+        resposta.style.color = "#4cc27a";
         formulario.reset();
     }
 }
