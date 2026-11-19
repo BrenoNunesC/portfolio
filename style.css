@@ -102,8 +102,31 @@ main {
     margin-bottom: 10px;
 }
 
-.card a {
-    color: #2ecc71;
+/* Botões */
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #111111;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #27ae60;
+    color: #eeeeee;
+}
+
+.escondido {
+    display: none;
+}
+
+#maisInfo {
+    margin-top: 15px;
 }
 
 /* Contato */
@@ -129,12 +152,6 @@ main {
 
 .formulario button {
     width: 100%;
-    padding: 10px;
-    background-color: #2ecc71;
-    color: #111111;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 #resposta {

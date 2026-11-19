@@ -8,3 +8,8 @@ function enviar() {
         resposta.innerHTML = "Obrigado, " + nome + "! Mensagem enviada.";
     }
 }
+
+function mostrarMais() {
+    let texto = document.getElementById("maisInfo");
+    texto.classList.toggle("escondido");
+}
