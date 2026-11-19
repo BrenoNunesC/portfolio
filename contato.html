@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<!--
-    Portfólio Pessoal
-    Aluno: Breno da Costa Nunes
--->
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breno Nunes - Contato</title>
+    <title>Contato</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,53 +12,32 @@
         <h1>Breno Nunes</h1>
         <nav>
             <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
             <a href="projetos.html">Projetos</a>
-            <a href="contato.html" class="ativo">Contato</a>
+            <a href="contato.html">Contato</a>
         </nav>
     </header>
 
     <main>
+        <h2 class="titulo">Contato</h2>
 
-        <section class="banner">
-            <h2>Contato</h2>
-            <p>Me mande uma mensagem ou me encontre nas redes abaixo.</p>
-        </section>
+        <section class="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
 
-        <section class="contato">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" rows="4"></textarea>
 
-            <div class="lista-links">
-                <a href="https://www.linkedin.com/in/breno-nunes-1a18032b0/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/BrenoNunesC" target="_blank">GitHub</a>
-                <a href="mailto:brenonunes@edu.unifil.br">E-mail</a>
-            </div>
-
-            <form id="formulario">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="Seu nome">
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Seu email">
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" rows="4"></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
+            <button onclick="enviar()">Enviar</button>
 
             <p id="resposta"></p>
-
         </section>
-
     </main>
 
     <footer>
-        <p>Breno da Costa Nunes - 2026</p>
-        <p>
-            <a href="https://www.linkedin.com/in/breno-nunes-1a18032b0/" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/BrenoNunesC" target="_blank">GitHub</a> |
-            <a href="mailto:brenonunes@edu.unifil.br">E-mail</a>
-        </p>
+        <p>Breno Nunes - 2026</p>
+        <a href="https://www.linkedin.com/in/breno-nunes-1a18032b0/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/BrenoNunesC" target="_blank">GitHub</a>
+        <a href="mailto:brenonunes@edu.unifil.br">E-mail</a>
     </footer>
 
     <script src="script.js"></script>

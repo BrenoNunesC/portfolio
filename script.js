@@ -1,23 +1,10 @@
-// Pega os elementos da página
-let formulario = document.getElementById("formulario");
-let resposta = document.getElementById("resposta");
-
-// Função chamada quando o formulário é enviado
-function enviarMensagem(event) {
-    event.preventDefault();
-
+function enviar() {
     let nome = document.getElementById("nome").value;
-    let email = document.getElementById("email").value;
-    let mensagem = document.getElementById("mensagem").value;
+    let resposta = document.getElementById("resposta");
 
-    if (nome == "" || email == "" || mensagem == "") {
-        resposta.textContent = "Preencha todos os campos!";
-        resposta.style.color = "#ff6b6b";
+    if (nome == "") {
+        resposta.innerHTML = "Digite seu nome!";
     } else {
-        resposta.textContent = "Obrigado, " + nome + "! Sua mensagem foi enviada.";
-        resposta.style.color = "#2ecc71";
-        formulario.reset();
+        resposta.innerHTML = "Obrigado, " + nome + "! Mensagem enviada.";
     }
 }
-
-formulario.addEventListener("submit", enviarMensagem);

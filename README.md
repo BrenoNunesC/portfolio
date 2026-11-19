@@ -9,6 +9,6 @@ Site: https://brenonunesc.github.io/portfolio/
 ## Páginas
 
 - Início
-- Sobre
+
 - Projetos
 - Contato
