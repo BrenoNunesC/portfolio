@@ -1,138 +1,70 @@
 <!DOCTYPE html>
+<!--
+    Portfólio Pessoal
+    Aluno: Breno da Costa Nunes
+-->
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entre em contato com Breno Nunes">
-    <title>Breno Nunes | Contato</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Breno Nunes - Contato</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <nav class="navbar">
-            <a href="index.html" class="logo">Breno<span>.dev</span></a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <ul class="menu" id="menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html" class="ativo">Contato</a></li>
-            </ul>
-
-            <button class="btn-tema" id="btnTema" aria-label="Alternar tema">🌙</button>
+    <header>
+        <h1>Breno Nunes</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html" class="ativo">Contato</a>
         </nav>
     </header>
 
     <main>
-        <section class="banner-pagina">
-            <h1>Entre em <span class="destaque">contato</span></h1>
-            <p>Quer conversar sobre um projeto, estágio ou só trocar uma ideia? Me manda uma mensagem.</p>
+
+        <section class="banner">
+            <h2>Contato</h2>
+            <p>Me mande uma mensagem ou me encontre nas redes abaixo.</p>
         </section>
 
         <section class="contato">
-            <aside class="contato-info revelar">
-                <h2>Meus contatos</h2>
-                <ul class="lista-contatos">
-                    <li>
-                        <a href="mailto:brenonunes@edu.unifil.br">
-                            <span class="contato-icone">✉️</span>
-                            <span>
-                                <strong>E-mail</strong>
-                                brenonunes@edu.unifil.br
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/breno-nunes-1a18032b0/" target="_blank" rel="noopener">
-                            <span class="contato-icone">💼</span>
-                            <span>
-                                <strong>LinkedIn</strong>
-                                Breno Nunes
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/BrenoNunesC" target="_blank" rel="noopener">
-                            <span class="contato-icone">🐙</span>
-                            <span>
-                                <strong>GitHub</strong>
-                                BrenoNunesC
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <span class="contato-item">
-                            <span class="contato-icone">📍</span>
-                            <span>
-                                <strong>Localização</strong>
-                                Londrina, PR
-                            </span>
-                        </span>
-                    </li>
-                </ul>
-            </aside>
 
-            <form class="formulario revelar" id="formContato" novalidate>
-                <h2>Envie uma mensagem</h2>
+            <div class="lista-links">
+                <a href="https://www.linkedin.com/in/breno-nunes-1a18032b0/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/BrenoNunesC" target="_blank">GitHub</a>
+                <a href="mailto:brenonunes@edu.unifil.br">E-mail</a>
+            </div>
 
-                <div class="campo">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
-                    <small class="erro" id="erroNome"></small>
-                </div>
+            <form id="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome">
 
-                <div class="campo">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
-                    <small class="erro" id="erroEmail"></small>
-                </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Seu email">
 
-                <div class="campo">
-                    <label for="assunto">Assunto</label>
-                    <select id="assunto" name="assunto">
-                        <option value="">Selecione</option>
-                        <option value="projeto">Projeto</option>
-                        <option value="estagio">Estágio / Emprego</option>
-                        <option value="outro">Outro</option>
-                    </select>
-                    <small class="erro" id="erroAssunto"></small>
-                </div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="4"></textarea>
 
-                <div class="campo">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" maxlength="500" placeholder="Escreva sua mensagem"></textarea>
-                    <small class="contador-caracteres"><span id="qtdCaracteres">0</span>/500</small>
-                    <small class="erro" id="erroMensagem"></small>
-                </div>
-
-                <button type="submit" class="btn btn-principal">Enviar</button>
-                <p class="msg-sucesso" id="msgSucesso" hidden></p>
+                <button type="submit">Enviar</button>
             </form>
+
+            <p id="resposta"></p>
+
         </section>
+
     </main>
 
-    <footer class="rodape">
-        <div class="rodape-conteudo">
-            <p>&copy; <span id="ano"></span> Breno Nunes. Todos os direitos reservados.</p>
-            <ul class="rodape-links">
-                <li><a href="https://www.linkedin.com/in/breno-nunes-1a18032b0/" target="_blank" rel="noopener">LinkedIn</a></li>
-                <li><a href="https://github.com/BrenoNunesC" target="_blank" rel="noopener">GitHub</a></li>
-                <li><a href="mailto:brenonunes@edu.unifil.br">E-mail</a></li>
-            </ul>
-        </div>
+    <footer>
+        <p>Breno da Costa Nunes - 2026</p>
+        <p>
+            <a href="https://www.linkedin.com/in/breno-nunes-1a18032b0/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/BrenoNunesC" target="_blank">GitHub</a> |
+            <a href="mailto:brenonunes@edu.unifil.br">E-mail</a>
+        </p>
     </footer>
 
-    <button class="btn-topo" id="btnTopo" aria-label="Voltar ao topo">↑</button>
-
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
